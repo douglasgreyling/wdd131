@@ -1,0 +1,108 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  min-height: 100px;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a {
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header a:hover {
+  background-color: thistle;
+  color: blueviolet;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 1100px;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main .temples {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figure img {
+  max-width: 250px;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.show {
+  display: inherit !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.align-self-end {
+  align-self: end !important;
+}
+
+.menu {
+  display: flex;
+}
