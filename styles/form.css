@@ -1,0 +1,100 @@
+body {
+  font-family: Roboto;
+  font-size: 1.2rem;
+  color: white;
+  background: black;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid white;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field > label {
+  margin-bottom: 0.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+	color: gold;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+.button {
+  padding: 0.5rem;
+  width: 100%;
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
+
+.no-decoration {
+  text-decoration: none;
+}

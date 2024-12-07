@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Douglas Greyling</title>
+    <meta name="description" content="WDD 131 - Product Review Form - Douglas Greyling">
+    <meta name="author" content="Douglas Greyling">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading">Product Review Form</h1>
+    </header>
+    <div class="container">
+      <main>
+        <form id="form" method="get" action="review.html">
+          <div class="field">
+            <fieldset>
+              <legend>Product Name</legend>
+              <select id="product" name="product" required class="w-full">
+                <option value="" selected disabled>Select a Product...</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="field">
+            <fieldset>
+              <legend>Overall Rating</legend>
+              <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="field">
+            <fieldset>
+              <legend>Date of Installation</legend>
+              <input type="date" id="install-date" name="install-date" required class="w-full">
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="field">
+            <fieldset class="flex flex-col">
+              <legend>Useful features:</legend>
+              <span class="mb-1"><small>(Select all that apply)</small></span>
+
+              <div>
+                <label for="durability">Durability:</label>
+                <input type="checkbox" id="durability" name="rating" value="Durability">
+              </div>
+
+              <div>
+                <label for="ease-of-use">Ease of Use:</label>
+                <input type="checkbox" id="ease-of-use" name="rating" value="Ease of Use">
+              </div>
+
+              <div>
+                <label for="performance">Performance:</label>
+                <input type="checkbox" id="performance" name="rating" value="Performance">
+              </div>
+
+              <div>
+                <label for="design">Design:</label>
+                <input type="checkbox" id="design" name="rating" value="Design">
+              </div>
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="field">
+            <fieldset class="flex flex-col">
+              <legend>Review (Optional):</legend>
+              <textarea id="review" name="review"></textarea>
+            </fieldset>
+          </div>
+
+          <br>
+
+          <div class="field">
+            <fieldset class="flex flex-col">
+              <legend>Your Name (Optional):</legend>
+              <input type="text" id="name" name="name">
+            </fieldset>
+          </div>
+
+          <br>
+
+          <button type="submit" class="button">Submit Review</button>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Douglas Greyling, South Africa
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
